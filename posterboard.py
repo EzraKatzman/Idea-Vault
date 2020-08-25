@@ -14,7 +14,7 @@ args = sys.argv
 args.pop(0)
 content = ' '.join(args)
 
-driver.get("https://www.notion.so/8aeb1067f7244d708066f03e2a1df719?v=3b1c8594783a436a8db269c933159fe8")
+driver.get(os.getenv("SITE"))
 
 try:
     userinput = WebDriverWait(driver, 10).until(
