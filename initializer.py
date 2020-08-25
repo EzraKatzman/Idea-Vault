@@ -4,15 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-username = os.getenv("GITUSER")
-password = os.getenv("GITPASS")
+token = os.getenv("TOKEN")
 
 args = sys.argv
 args.pop(0)
 reponame = ' '.join(args)
 
 def create():
-    user = Github(username, password).get_user()
+    user = Github(token).get_user()
     user.create_repo(reponame)
     print(f"Successfully created repository {reponame}")
 
