@@ -1,6 +1,8 @@
 # Idea-Vault
 This project was made because I have a lot of great ideas when I'm away from my computer, and I tend to forget them if I don't write them down. So instead of just using a notes app, I created this script that I run from my phone (*via SSH on raspberry pi*), to be able to insert my new idea right into my project planning workflow, with the option of making a git repository for it as well.
 
+:star: Like the project? Consider giving the repository a star!
+
 # Installation
 ```
 git clone "https://github.com/EzraKatzman/Idea-vault.git"
